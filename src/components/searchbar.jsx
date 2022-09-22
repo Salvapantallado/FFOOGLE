@@ -45,9 +45,7 @@ export default function Searchbar() {
         .get(`https://www.moogleapi.com/api/v1/${filter}/search?name=${search}`)
         .then((res) => setDetails(res.data));
     }
-    if (search === "") {
-      RandomInfo();
-    }
+
     if (search !== "" && filter === "games") {
       awaitGames();
     }
