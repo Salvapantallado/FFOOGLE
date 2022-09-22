@@ -1,0 +1,39 @@
+.logo h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 6em;
+}
+
+.blue{
+    color: #4285f4;
+}
+
+.red {
+    color: #CC0000;
+}
+
+.yellow {
+    color: #ffbb33;
+}
+
+.green {
+    color: #007E33;
+}
+
+/* .letter-e {
+    margin-left: -12px;
+}
+
+.no-space{
+    letter-spacing: -35px;
+} */
+
+@media screen and (max-width: 875px){
+    .logo{
+        display: flex;
+        height: 20vh;
+        justify-content: center;
+    }
+    .logo h1{
+        font-size: 4em;
+    }
+}
