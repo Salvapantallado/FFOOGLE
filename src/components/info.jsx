@@ -59,7 +59,7 @@ export default function Info({ details, filter }) {
               <div className="item-img">
                 <img
                   src={
-                    item.pictures.length > 0 && filter === "characters"
+                    item.pictures.length > 0 && filter === "characters" && item.pictures.length !== undefined
                       ? item.pictures[0].url
                       : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ8puqKFJtMEUt4h9gNSa1mKp5RoSHXtBwQQ&usqp=CAU"
                   }
@@ -71,7 +71,7 @@ export default function Info({ details, filter }) {
             </div>
           ))
         : details.message}
-        {details?.length >= 1 && filter === "monsters"
+        {details?.length >= 1 && filter === "monsters" && item.pictures.length !== undefined
         ? details.map((item) => (
             <div key={item.id} className="item-container">
               <div className="menu-background">
@@ -127,7 +127,7 @@ export default function Info({ details, filter }) {
             </div>
           ))
         : details.message}
-        {details?.length >= 1 && filter === "games"
+        {details?.length >= 1 && filter === "games" && item.pictures.length !== undefined
         ? details.map((item) => (
             <div key={item.gameId} className="item-container">
               <div className="menu-background">
