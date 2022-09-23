@@ -71,7 +71,7 @@ export default function Info({ details, filter }) {
             </div>
           ))
         : details.message}
-        {details?.length >= 1 && filter === "monsters" && item.pictures.length !== undefined
+        {details?.length >= 1 && filter === "monsters"
         ? details.map((item) => (
             <div key={item.id} className="item-container">
               <div className="menu-background">
