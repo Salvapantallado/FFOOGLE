@@ -32,6 +32,7 @@
         display: flex;
         height: 20vh;
         justify-content: center;
+        margin: 15px 0;
     }
     .logo h1{
         font-size: 4em;
