@@ -1,4 +1,5 @@
 .App {
   text-align: center;
   background-color: #2d4361;
+  min-height: 100vh;
 }
